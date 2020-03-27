@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import os
 from discord.ext import commands
 from discord.ext.commands import bot
 
@@ -87,6 +88,7 @@ async def on_ready():
     async def 헿(ctx):
         await ctx.send('흐ㅔ헤헤헿❤')
 
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
 
-bot.run('NjkyNTgzNjE0MDU5MjQ5Njg0.XnxCfA.EUYmn0t3W87tZutET8WnZrWSfHE')
 
